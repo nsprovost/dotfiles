@@ -1,0 +1,21 @@
+filetype plugin indent on
+
+
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set textwidth=79
+set expandtab
+set autoindent
+set fileformat=unix
+set ignorecase
+
+" Bundles
+Plug 'tmhedberg/SimpylFold'
+Plug 'vim-scripts/indentpython.vim'
+Plug 'Valloric/YouCompleteMe'
+Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] } "Loads only when opening NERDTree
+
+
+
