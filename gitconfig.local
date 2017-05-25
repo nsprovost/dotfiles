@@ -1,7 +1,3 @@
-[reviewboard]
-  url = https://reviews.wordstream.com
-
-
 [diff]
     tool = kdiff3
 
