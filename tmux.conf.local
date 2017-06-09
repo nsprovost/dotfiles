@@ -23,7 +23,7 @@ source-file "${HOME}/.tmux-themepack/powerline/double/cyan.tmuxtheme"
 # Set the default terminal mode to 256color mode
 set -g default-terminal "screen-256color"
 
-pane numbers
+# pane numbers
 set-option -g display-panes-active-colour colour02
 set-option -g display-panes-colour colour07
 
