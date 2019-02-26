@@ -1,21 +1,14 @@
-filetype plugin indent on
+" remove the mode section because it's displayed by the statusbar plugin
+set noshowmode
+
+" todo: figure out airline or powerline
+" let g:airline_theme='wombat'
+" let g:airline_powerline_fonts=1
+" set guifont=Roboto\ Mono\ for\ Powerline:h13
+" set encoding=utf-8
+" set term=xterm-256color
+" set termencoding=utf-8
 
 
-
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set textwidth=79
-set expandtab
-set autoindent
-set fileformat=unix
-set ignorecase
-
-" Bundles
-Plug 'tmhedberg/SimpylFold'
-Plug 'vim-scripts/indentpython.vim'
-Plug 'Valloric/YouCompleteMe'
-Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] } "Loads only when opening NERDTree
-
-
-
+" show relative line numbers except for the current line
+set number relativenumber

@@ -1,3 +1,5 @@
+[alias]
+    nuke = !sh -c 'git branch -D $1 && git push origin :$1' -
 [diff]
     tool = kdiff3
 
@@ -15,5 +17,5 @@
     trustExitCode = false
 
 [user]
-    name = Norm Provost
-    email = nsprovost@gmail.com
+  name = norm
+  email = norm@intercom.io

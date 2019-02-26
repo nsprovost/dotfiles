@@ -1,0 +1,18 @@
+" plugin to map * to do Ag search
+Plug 'Chun-Yang/vim-action-ag'
+
+" git plugin
+Plug 'tpope/vim-fugitive'
+
+" autocomplete plugin
+Plug 'valloric/youcompleteme'
+
+" enhanced dot command
+Plug 'tpope/vim-repeat'
+
+" Plug 'itchyny/lightline.vim'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+
