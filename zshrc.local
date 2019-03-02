@@ -13,3 +13,7 @@ gitnewbranch() {
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+
+# run brew install zsh-autosuggestions for this to work
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh

@@ -5,14 +5,28 @@ Plug 'Chun-Yang/vim-action-ag'
 Plug 'tpope/vim-fugitive'
 
 " autocomplete plugin
-Plug 'valloric/youcompleteme'
+" Plug 'valloric/youcompleteme'
 
 " enhanced dot command
 Plug 'tpope/vim-repeat'
 
-" Plug 'itchyny/lightline.vim'
-
+" airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" themes
+" Plug 'cocopon/iceberg.vim'
+Plug 'morhetz/gruvbox'
+" Plug 'chriskempson/base16-vim'
+
+" ruby
+Plug 'thoughtbot/vim-rspec'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-endwise'
+Plug 'kana/vim-textobj-user'
+Plug 'nelstrom/vim-textobj-rubyblock'
+
+" markdown
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 

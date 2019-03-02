@@ -18,7 +18,8 @@ bind -n M-Down select-pane -D
 # Enable mouse mode (tmux 2.1 and above)
 set -g mouse on
 
-source-file "${HOME}/.tmux-themepack/powerline/double/cyan.tmuxtheme"
+# blue theme
+source-file "${HOME}/.tmux-themepack/powerline/default/gray.tmuxtheme"
 
 # Set the default terminal mode to 256color mode
 set -g default-terminal "screen-256color"
@@ -48,3 +49,6 @@ set -sg escape-time 0
 
 # Reload tmux config
 bind r source-file ~/.tmux.conf
+
+# toggle status bar
+bind-key b set -g status
