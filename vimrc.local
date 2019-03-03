@@ -48,4 +48,3 @@ command! Wq wq
 " Let's be reasonable, shall we?
 nmap k gk
 nmap j gj
-
