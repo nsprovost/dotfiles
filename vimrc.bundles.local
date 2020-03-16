@@ -5,25 +5,18 @@ Plug 'Chun-Yang/vim-action-ag'
 " git plugin
 Plug 'tpope/vim-fugitive'
 
-" autocomplete plugin
-" Plug 'valloric/youcompleteme'
-
 " enhanced dot command
 Plug 'tpope/vim-repeat'
 
-" airline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
 " themes
-" Plug 'cocopon/iceberg.vim'
+" Plug 'lifepillar/vim-solarized8'
+" Plug 'lifepillar/vim-solarized8'
 Plug 'morhetz/gruvbox'
-" Plug 'chriskempson/base16-vim'
 
 " ruby
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-endwise'
+" Plug 'tpope/vim-endwise'
 Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
 
@@ -31,24 +24,18 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
-" javascript
-Plug 'pangloss/vim-javascript'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-
 " global find/replace
 Plug 'skwp/greplace.vim'
 
-" supposedly better than ctrlp?
+" better than ctrlp
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " go to root git directory for finding things
 Plug 'airblade/vim-rooter'
 
-" mustache/handlebars
-Plug 'mustache/vim-mustache-handlebars'
+" language server protocol client
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" python
-Plug 'psf/black'
-Plug 'vim-syntastic/syntastic'
-
+" terraform fmt TODO: move this to ftplugin for terraform
+Plug 'hashivim/vim-terraform'

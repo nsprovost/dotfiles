@@ -1,41 +1,35 @@
-
-
-export PATH="/Users/norm/miniconda3/bin:$PATH"
+# always use rbenv
 eval "$(rbenv init -)"
 
-gitnewbranch() {
-    git checkout -b norm/"$1"
-}
+# always use pyenv
+eval "$(pyenv init -)"
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-
 # run brew install zsh-autosuggestions for this to work
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^ ' autosuggest-accept
 
-chrome() {
-  open -a "Google Chrome" "$1"
-}
-
-# kubernetes shortcuts
-alias k=kubectl
-complete -F __start_kubectl k
-if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi
-
-alias gc='gcloud'
-
 # assume role for aws cli
 source $(which assume-role)
-
-# always use pyenv
-eval "$(pyenv init -)"
 
 # use fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # intercom specific
 [ -f ~/.intercom.zsh ] && source ~/.intercom.zsh
+
+# go
+export GOBIN=~/go/bin
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$GOBIN
+
+# use nvim
+alias vim=nvim
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/normprovost/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
 
